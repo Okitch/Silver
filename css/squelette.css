@@ -1,0 +1,1967 @@
+/*Style principal + conteneur principaux*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+
+a {
+    color: #004a55;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    z-index: 8;
+    top: 0;
+    background-color: white;
+
+}
+
+h1 {
+    width: 100%;
+    font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    text-align: center;
+    color: #004a55;
+}
+
+h2 {
+    width: 100%;
+    font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    text-align: center;
+    color: #004a55;
+}
+
+h3 {
+    width: 100%;
+    font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    text-align: center;
+    color: #004a55;
+}
+
+h4 {
+    width: 100%;
+    font-family: 'Merriweather', 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+    text-align: center;
+    color: #004a55;
+}
+
+hr {
+    border: 3px solid #004a55;
+    border-radius: 20px;
+}
+
+main {
+    margin-top: 300px;
+    width: 80%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.container-main {
+    width: 100%;
+    height: 100%;
+    margin-top: 250px;
+}
+
+/*Fleche retour en haut*/
+#scroll_to_top {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 30px;
+    transition: 0.3s;
+}
+
+#scroll_to_top img {
+    width: 100px;
+}
+
+/*////////////*/
+/*HEADER + NAVBAR*/
+.headerContainer {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+/*anim header*/
+
+.animAcceuil {
+    overflow: hidden;
+    margin-top: 30px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: #004a55;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.txta {
+    white-space: nowrap;
+    font-size: 16px;
+    animation: scrollTxt 20s linear infinite;
+}
+
+@keyframes scrollTxt {
+    0% {
+        transform: translate(-100%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.acceuil {
+    position: absolute;
+    top: 3px;
+    left:-70px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/*Logo*/
+.logo {
+    width: 40%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.logo1 {
+    width: 150px;
+    height: 150px;
+}
+
+/*Barre de recherche*/
+.recherche {
+    width: 40%;
+    height: 100%;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+.rech {
+    position: relative;
+}
+
+.loupe {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: white;
+    right: 30px;
+    top: 0;
+}
+
+.recher {
+    width: 80%;
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #004a55;
+}
+
+/*Panier*/
+.panier {
+    position: relative;
+    width: 10%;
+    height: 100%;
+    margin-top: 140px;
+}
+
+.pani {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    top: 2px;
+    left:0;
+}
+.compt{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    top: 0;
+    left:50px;
+}
+
+/*SIDE NAV*/
+.hamburger {
+    width: 10%;
+    height: 100%;
+    margin-top: 150px;
+
+}
+
+.butRech {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+.container-footer {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footerflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    right: -300px;
+    background-color: #004a55;
+    padding-top: 60px;
+    transition: right 0.5s ease;
+}
+
+/*Bouton Valider*/
+.valider {
+    margin-left: 10px;
+    width: 50px;
+    color: white;
+    box-shadow: 3px 2px 3px black;
+    background-color: #004a55;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+}
+.flexValidPays{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #004a55;
+    background-color: white;
+}
+
+.sidenav ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: #004a55;
+    margin: 6px 0;
+}
+
+/*PAGA D'ACCEUIL*/
+.flexAcceuil {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.avisAcceuil {
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Banniere de paiement*/
+.paiment{
+    width: 100%;
+    height: 20%;
+    margin-top: 50px;
+    text-align: center;
+}
+.paiment img{
+    margin-top: 80px;
+    width: 450px;
+    height: 150px;
+
+}
+/*Acceuil Principal avec slide*/
+.acceuilCentre {
+    width: 80%;
+    height: 90%;
+    margin-left: 100px;
+    overflow: hidden;
+
+}
+
+.slideAcc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide1 {
+    width: 100%;
+    transition: 2s;
+}
+
+.imgAcceuil {
+    width: 813px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.acceuilGauche {
+    width: 20%;
+    height: 100%;
+
+}
+
+.solde {
+    width: 100%;
+    height: 100%;
+}
+
+.soldeBl {
+    width: 320px;
+    height: 600px;
+    border-radius: 15px;
+}
+.trad{
+    margin: 0;
+    width: 100%;
+}
+/*Carousel auto*/
+.slideAcc input {
+    display: none;
+}
+
+.navigation-manual1 {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    right: 150px;
+    top: 850px;
+}
+
+.manual-btn1 {
+    border: 2px solid #004a55;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn1:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn1:hover {
+    background-color: #004a55;
+
+}
+
+#rdio1:checked~.first {
+    margin-left: 0;
+}
+
+#rdio2:checked~.first {
+    margin-left: -100%;
+}
+
+#rdio3:checked~.first {
+    margin-left: -200%;
+}
+
+#rdio4:checked~.first {
+    margin-left: -300%;
+}
+
+.navigation-auto1 {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    right: 150px;
+    top: 850px;
+}
+
+.navigation-auto1 div {
+    border: 2px solid #004a55;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.navigation-auto1 div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#rdio1:checked~.navigation-auto1 .autobtn-a {
+    background-color: #004a55;
+}
+
+#rdio2:checked~.navigation-auto1 .autobtn-b {
+    background-color: #004a55;
+}
+
+#rdio3:checked~.navigation-auto1 .autobtn-c {
+    background-color: #004a55;
+}
+
+#rdio4:checked~.navigation-auto1 .autobtn-d {
+    background-color: #004a55;
+}
+
+.avisAcc {
+    width: 30%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #004a55;
+
+}
+
+
+
+/*Page nos produits*/
+
+.HouF {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.homme,
+.femme {
+    width: 50%;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.photoH {
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.photoH:hover {
+    transform: scale(1.1);
+}
+
+/*Animation categorie homme / femme*/
+.anim {
+    overflow: hidden;
+    display: block;
+}
+
+.blocA {
+    width: 100%;
+    height: 30%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.A,
+.A2,
+.A3,
+.A4,
+.A5 {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.photo {
+    width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004a55;
+    text-align: center;
+}
+
+.img-hover-zoom {
+    height: 400px;
+    /* [1.1] Set it as per your need */
+    overflow: hidden;
+    /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom .photo {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover .photo {
+    transform: scale(1.5);
+
+
+}
+
+.blocB {
+    width: 100%;
+    height: 30%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.ficheP, .descP, .suggest{
+    margin-top: 20px;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.panier2 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+   
+}
+.descP p{
+    margin-top: 20px;
+}
+
+
+/*MAGASIN*/
+.empMag {
+    width: 100%;
+    height: 20%;
+    margin-top: 30px;
+
+}
+
+.empMag2 {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid #004a55;
+}
+
+.loupe2 {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.emploup {
+    background-color: white;
+}
+
+/*Partie centrale emplacement magasin*/
+.princip {
+    width: 100%;
+    height: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.coteGauche {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.coteDroit {
+    width: 70%;
+}
+
+.mag1,
+.mag2,
+.mag3 {
+    width: 100%;
+    height: 30%;
+    border: 3px solid #004a55;
+    margin-top: 10px;
+}
+
+.logoMag {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    right: 270px;
+}
+
+.logoMag2 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 120px;
+    right: 270px;
+}
+
+.logoMag3 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 220px;
+    right: 270px;
+}
+
+
+
+
+/*RESERVATION*/
+
+.presenCoach {
+    width: 100%;
+    height: 40%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.videoCoach {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
+.coach {
+    width: 50%;
+    height: 100%;
+    margin-top: 40px;
+
+}
+
+.prof {
+    width: 50%;
+    height: 100%;
+
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+
+}
+
+.crist {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-top: 50px;
+    cursor: pointer;
+
+}
+
+.bRdv {
+    width: 100%;
+    height: 20px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.rdv {
+    background-color: #004a55;
+    width: 220px;
+    height: 120px;
+    box-shadow: 12px 12px 2px 1px black;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+.rdv:hover {
+    background-color: #004a55;
+    color: white;
+    box-shadow: none;
+    opacity: 1;
+}
+
+/*Formulaire rdv*/
+.formRdv {
+
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #004a55;
+    color: white;
+
+}
+
+.formPopup {
+    display: none;
+    position: absolute;
+    padding: 30px;
+    top: 5%;
+    left: 20%;
+    z-index: 9;
+    opacity: 0.9;
+}
+
+#validForm,
+#annulForm {
+    margin: 20px 10px 0 0;
+    width: 50px;
+    color: white;
+    box-shadow: 3px 2px 3px black;
+    background-color: #004a55;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+}
+
+.closeForm {
+    margin-left: 550px;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+
+/*PAGE LA BOUTIQUE*/
+.blA,
+.blB,
+.blC,
+.blD,
+.blE {
+    width: 100%;
+    height: 25%;
+    text-align: left;
+    margin: 40px 0 40px 0;
+}
+
+.blD {
+    text-align: center;
+}
+
+/*BloA*/
+.para {
+    font-size: 20px;
+    font-weight: bold;
+    color: #004a55;
+    list-style: circle;
+}
+
+.left {
+    text-align: left;
+}
+
+/*Bloc B*/
+.contact {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*Contact*/
+.blB {
+    position: relative;
+    text-align: center;
+}
+
+.opera {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+/*Recrutement*/
+.recru {
+    width: 900px;
+    height: 500px;
+    border: 3px solid #004a55;
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.blC {
+    position: relative;
+    text-align: center;
+}
+
+/*Bloc C*/
+.vidEventA,
+.vidEventB,
+.vidEventC {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.soiree {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 2px solid #004a55;
+    width:760px; 
+    height:515px;
+}
+
+/*PRESSE*/
+.newsA,
+.newsB {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 40px 0;
+}
+
+.newlet {
+    width: 100%;
+    height: 20%;
+}
+
+.n1 {
+    width: 25%;
+    height: 100%;
+}
+
+.imgNews {
+    width: 200px;
+    height: 350px;
+    transition: all 0.2s;
+    cursor: pointer;
+
+}
+
+.imgNews:hover {
+    transform: rotate(-15deg);
+
+}
+
+.zno:hover {
+    transform: rotate(15deg);
+}
+
+.mailNews {
+    font-size: 20px;
+    color: #004a55;
+}
+
+.mailNews1 {
+    width: 250px;
+    border: 2px solid #004a55;
+}
+
+/*Avis*/
+.contAvis {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.avis {
+    width: 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.avis input {
+    display: none;
+}
+
+/*Formulaire Laissez un avis*/
+.avisForm {
+    margin-top: 150px;
+    width: 100%;
+    height: 20%;
+    opacity: 0.8;
+}
+.banniereAvis{
+    width:100%;
+    height: 400px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+/**/
+/*Bloc Avis avec Slide*/
+.avis1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 2s;
+
+}
+
+.imgAvis {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #004a55;
+    margin: 30px 0 30px 0;
+}
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    right: 300px;
+    top: 700px;
+}
+
+.manual-btn {
+    border: 2px solid #004a55;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #004a55;
+
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -66%;
+}
+
+#radio3:checked~.first {
+    margin-left: -266%;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    right: 300px;
+    top: 700px;
+}
+
+.navigation-auto div {
+    border: 2px solid #004a55;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .autobtn-1 {
+    background-color: #004a55;
+}
+
+#radio2:checked~.navigation-auto .autobtn-2 {
+    background-color: #004a55;
+}
+
+#radio3:checked~.navigation-auto .autobtn-3 {
+    background-color: #004a55;
+}
+
+.formAvis {
+    width: 50%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: #004a55;
+    color: white;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-left: 300px;
+}
+/*Animation bloc avis 2*/
+.navigation-manual3 {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    right: 300px;
+    top: 1250px;
+}
+
+.manual-btn3 {
+    border: 2px solid #004a55;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn3:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn3:hover {
+    background-color: #004a55;
+
+}
+
+#rdi1:checked~.first {
+    margin-left: 0;
+}
+
+#rdi2:checked~.first {
+    margin-left: -66%;
+}
+
+#rdi3:checked~.first {
+    margin-left: -266%;
+}
+
+.navigation-auto3 {
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    right: 300px;
+    top: 1250px;
+}
+
+.navigation-auto3 div {
+    border: 2px solid #004a55;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.navigation-auto3 div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#rdi1:checked~.navigation-auto3 .autobtn-1e {
+    background-color: #004a55;
+}
+
+#rdi2:checked~.navigation-auto3 .autobtn-2f {
+    background-color: #004a55;
+}
+
+#rdi3:checked~.navigation-auto3 .autobtn-3j {
+    background-color: #004a55;
+}
+
+
+
+
+/*Actualités*/
+.textE {
+    width: 100%;
+    height: 25%;
+    margin: 40px 0 40px 0;
+    border: 2px solid #004a55;
+    padding: 10px;
+}
+/*Mon compte*/
+.monCompte{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border-radius: 15px;
+}
+.monCompte label{
+    color: #004a55;
+    font-size: 30px;
+    font-weight: bold;
+}
+.monCompte input{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.monCompte button{
+    width: 100px;
+    height: 50px;
+    margin-left: 550px;
+    margin-top: 20px;
+    display: block;
+    border: 2px solid black;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #004a55;
+    box-shadow: 2px 2px 10px black;
+    transition: all 2s;
+    cursor: pointer;
+}
+.monCompte button:hover{
+    background-color: #068fa4;
+    box-shadow: none;
+}
+
+/*Responsive*/
+
+
+@media screen and (max-width : 1130px) {
+    body {
+        width: 1130px;
+    }
+
+/*Page d'Acceuil*/
+    .flexAcceuil {
+        display: flex;
+    }
+
+    .acceuilCentre {
+        width: 100%;
+        margin: 0;
+    }
+
+    .imgAcceuil {
+        width: 775px;
+        height: 675px;
+    }
+    .soldeBl{
+        width: 175px;
+        height: 675px;
+    }
+
+    .navigation-manual1 {
+        position: absolute;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        left: 150px;
+        top: 850px;
+    }
+
+    .navigation-auto1 {
+        position: absolute;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        left: 150px;
+        top: 850px;
+    }
+
+    .avisAcceuil {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avisAcc {
+        width: 150%;
+
+    }
+
+    .panier {
+        margin-left: 100px;
+        width: 30%;
+    }
+
+
+    .blocA,
+    .blocB {
+        width: 100%;
+    }
+
+    .photo {
+        width: 830px;
+        height: 400px;
+    }
+
+    .A,
+    .A2,
+    .A3,
+    .A4,
+    .A5 {
+        width: 20%;
+        height: 100%;
+
+    }
+
+    .princip {
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coteGauche {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .coteDroit {
+        width: 100%;
+        height: 50%;
+    }
+
+
+    .homme,
+    .femme {
+        width: 50%;
+        height: 50%;
+
+    }
+
+    .photo {
+        width: 130px;
+        height: 300px;
+    }
+
+}
+@media screen and (max-width : 970px) {
+    body {
+        width: 970px;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    #scroll_to_top img {
+        width: 50px;
+    }
+
+
+    .flexAcceuil {
+        display: block;
+    }
+
+    .acceuilCentre {
+        width: 100%;
+        margin: 0;
+    }
+
+    .imgAcceuil {
+        width: 740px;
+        height: 600px;
+    }
+
+    .navigation-manual1 {
+        position: absolute;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        left: 200px;
+        top: 1450px
+    }
+
+    .navigation-auto1 {
+        position: absolute;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        left: 200px;
+        top: 1450px
+    }
+
+    .avisAcceuil {
+        width: 100%;
+        display: block;
+    }
+
+    .avisAcc {
+        width: 100%;
+
+    }
+
+    .panier {
+        margin-left: 100px;
+        width: 30%;
+    }
+
+    .footerflex {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .blocA,
+    .blocB {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+    .soldeBl{
+        display: none;
+    }
+
+    .photo {
+        width: 630px;
+        height: 200px;
+    }
+    .paiment img{
+        width: 550px;
+        height: 300px;
+    }
+
+    .A,
+    .A2,
+    .A3,
+    .A4,
+    .A5 {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .princip {
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coteGauche {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .coteDroit {
+        width: 100%;
+        height: 50%;
+    }
+    .logoMag, .logoMag2,.logoMag3{
+        display: none;
+    }
+    .presenCoach{
+        display: block;
+        width: 100%;
+    }
+    .coach{
+        width: 100%;
+        height: 50%;
+    }
+    .prof{
+        width: 100%;
+        height: 50%;
+    }
+    .video iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .crist{
+       width: 200px;
+       height: 200px;
+    }
+    .formPopup{
+       width: 350px;
+       height:1000px;
+    }
+  .closeForm{
+    margin-left: 100px;
+  }
+  .opera{
+    width: 200px;
+    height: 300px;
+
+  }
+  .recru{
+    width: 400px;
+    height: 300px;
+
+  }
+  .vidEventA iframe{
+    width: 400px;
+    height: 300px;
+  }
+  .vidEventB iframe{
+    width: 400px;
+    height: 300px;
+  }
+  .vidEventC iframe{
+    width: 400px;
+    height: 300px;
+  }
+  .left, .left ul li{
+    font-size: 15px;
+  }
+
+  h2,h3{
+    font-size: 18px;
+  }
+  .monCompte button{
+    margin-left: 300px;
+  }
+  .newsA, .newsB{
+    display: block;
+}
+.n1{
+    width: 100%;
+}
+.imgNews{
+    width: 100%;
+    height: 400px;
+}
+
+}
+
+@media screen and (max-width : 768px) {
+    body {
+        width: 768px;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .logoMag, .logoMag2,.logoMag3{
+        display: none;
+    }
+
+    #scroll_to_top img {
+        width: 50px;
+    }
+
+    .recherche,
+    .panier,
+    .acceuilGauche {
+        display: none;
+    }
+
+    .flexAcceuil {
+        display: block;
+    }
+
+    .acceuilCentre {
+        width: 100%;
+        margin: 0;
+    }
+
+    .imgAcceuil {
+        width: 600px;
+        height: 600px;
+    }
+
+    .navigation-manual1 {
+        position: absolute;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        left: 100px;
+        top: 850px
+    }
+
+    .navigation-auto1 {
+        position: absolute;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        left: 100px;
+        top: 850px
+    }
+
+    .avisAcceuil {
+        width: 100%;
+        display: block;
+    }
+
+    .avisAcc {
+        width: 100%;
+
+    }
+
+    .panier {
+        margin-left: 100px;
+        width: 30%;
+    }
+
+    .footerflex {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .blocA,
+    .blocB {
+        width: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px
+    }
+
+    .paiment img{
+        width: 350px;
+        height: 200px;
+    }
+
+    .A,
+    .A2,
+    .A3,
+    .A4,
+    .A5 {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .princip {
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coteGauche {
+        width: 100%;
+        height: 50%;
+
+    }
+
+    .coteDroit {
+        width: 100%;
+        height: 50%;
+    }
+    .presenCoach{
+        display: block;
+        width: 100%;
+    }
+    .coach{
+        width: 100%;
+        height: 50%;
+    }
+    .prof{
+        width: 100%;
+        height: 50%;
+    }
+    .video iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .crist{
+       width: 200px;
+       height: 200px;
+    }
+    .formPopup{
+       width: 350px;
+       height:1000px;
+    }
+  .closeForm{
+    margin-left: 100px;
+  }
+  .opera{
+    width: 200px;
+    height: 300px;
+
+  }
+  .recru{
+    width: 300px;
+    height: 200px;
+
+  }
+  .vidEventA iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .vidEventB iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .vidEventC iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .left, .left ul li{
+    font-size: 15px;
+  }
+
+  h2,h3{
+    font-size: 18px;
+  }
+  .monCompte button{
+    margin-left: 250px;
+  }
+  .newsA, .newsB{
+    display: block;
+}
+.n1{
+    width: 100%;
+}
+.imgNews{
+    width: 100%;
+    height: 400px;
+}
+    
+}
+@media screen and (max-width : 576px) {
+    body {
+        width: 576px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-main {
+        width: 100%;
+        height: 100%;
+        margin-top: 230px;
+        text-align: center;
+    }
+    .animAcceuil{
+        display: none;
+    }
+
+    #scroll_to_top img {
+        width: 50px;
+    }
+
+    .recherche,
+    .panier,
+    .acceuilGauche {
+        display: none;
+    }
+
+    .flexAcceuil {
+        display: block;
+        width: 100%;
+    }
+    
+
+    .acceuilCentre {
+        width: 100%;
+        margin: 0;
+    }
+
+    .imgAcceuil {
+        width: 375px;
+        height: 400px;
+    }
+    .imgAvis{
+        margin-right: 100px;
+    }
+
+    .navigation-manual1 {
+        position: absolute;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        top: 650px;
+        margin-left: 70px;
+    }
+
+    .navigation-auto1 {
+        position: absolute;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        top: 650px;
+        margin-left: 70px;
+    }
+
+    .avisAcceuil {
+        width: 100%;
+        display: block;
+        margin-top: 50px;
+    }
+
+    .avisAcc {
+        width: 100%;
+
+    }
+
+    .photo {
+        width: 200px;
+        height: 200px
+    }
+
+    .homme,
+    .femme {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .photoH {
+        height: 200px;
+        width: 200px;
+    }
+
+    .A,
+    .A2,
+    .A3,
+    .A4,
+    .A5 {
+        width: 100%;
+        height: 100%;
+
+    }
+    .paiment img{
+        width: 200px;
+        height: 100px;
+    }
+    .empMag{
+        margin-top: 100px;
+    }
+    .logoMag, .logoMag2,.logoMag3{
+        display: none;
+    }
+    .presenCoach{
+        display: block;
+        width: 100%;
+    }
+    .coach{
+        width: 100%;
+        height: 50%;
+    }
+    .prof{
+        width: 100%;
+        height: 50%;
+    }
+    .video iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .crist{
+       width: 200px;
+       height: 200px;
+    }
+    .formPopup{
+       width: 350px;
+       height:1000px;
+    }
+  .closeForm{
+    margin-left: 100px;
+  }
+  .opera{
+    width: 200px;
+    height: 300px;
+
+  }
+  .recru{
+    width: 300px;
+    height: 200px;
+
+  }
+  .vidEventA iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .vidEventB iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .vidEventC iframe{
+    width: 300px;
+    height: 200px;
+  }
+  .left, .left ul li{
+    font-size: 15px;
+  }
+
+  h2,h3{
+    font-size: 18px;
+  }
+  .textE p{
+    font-size: 15px;
+    padding: 10px;
+  }
+  .monCompte{
+    width: 50%;
+    height: 300px;
+    text-align: right;
+    border-radius:none;
+}
+.monCompte label{
+    color: #004a55;
+    font-size: 12px;
+    font-weight: bold;
+}
+.monCompte input{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+.monCompte button{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    display: block;
+    border: 2px solid black;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: #004a55;
+    box-shadow: 2px 2px 10px black;
+    transition: all 2s;
+    cursor: pointer;
+}
+.monCompte button:hover{
+    background-color: #068fa4;
+    box-shadow: none;
+}
+.newsA, .newsB{
+    display: block;
+}
+.n1{
+    width: 100%;
+}
+.imgNews{
+    width: 100%;
+    height: 400px;
+}
+.imgAvis{
+    width: 100px;
+    height: 100px;
+}
+.imgAvis h4 p{
+    font-size: 10px;
+}
+.formAvis{
+    margin-left: 0;
+    width: 20%;
+    background-color: white;
+
+}
+.formAvis label{
+    color: #004a55;
+    font-size: 12px;
+}
+
+}
+
+@media screen and (min-width : 1500px){
+
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        width: 100%;
+       
+    }
+    footer{
+        width: 100%;
+    }
+    .imgAcceuil{
+        width: 1350px;
+        height: 700px;
+    }
+    .soldeBl{
+        height: 700px;
+    }
+} 
+
+
+
