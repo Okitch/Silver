@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter-Commandes-Paiement-Silver</title>
+    <link rel="stylesheet" href="../css/squelette.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>MON COMPTE</h1>
+        <div class="animAcceuil">
+            <span class="txta">LIVRAISON <span style="color:#ff9d00">GRATUITE</span> A PARTIR DE <span
+                    style="color:#ff9d00"> 100 EUROS
+                    D'ACHATS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="txta">SATISFAIT OU REMBOURSE !&nbsp;&nbsp;&nbsp; BESOIN D'AIDE
+                ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00">&#9990;
+                01.30.00.00.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span></span>
+            <span class="txta">LIVRAISON <span style="color:#ff9d00">GRATUITE</span> A PARTIR DE <span
+                    style="color:#ff9d00"> 100 EUROS
+                    D'ACHATS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="txta">SATISFAIT OU REMBOURSE !&nbsp;&nbsp;&nbsp; BESOIN D'AIDE
+                        ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff9d00">&#9990;
+                        01.30.00.00.00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span></span>
+                    <span class="txta">LIVRAISON <span style="color:#ff9d00">GRATUITE</span> A PARTIR DE <span
+                    style="color:#ff9d00"> 100 EUROS
+                    D'ACHATS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="headerContainer">
+            <div class="logo">
+                <img class="logo1" src="../img/logo/logo_transparent.png" alt="logo" title="un logo">
+            </div>
+
+            <div class="recherche">
+                <label for="rechercher" class="rech">
+                    <button id="rechercher" style="border: none; margin-top:10px;">
+                        <img class="loupe" src="../img/logo/loupe.png" alt="une loupe" title="loupe">
+
+                    </button>
+                </label>
+                <input type="text" class="recher" placeholder="Que recherchez vous">
+            </div>
+
+            <div class="panier">
+                <a href="../index.html"><img class="acceuil" src="../img/logo/maison.png" alt="acceuil"
+                    title="logo"></a>
+                <a href="moncompte.html"><img class="compt" src="../img/logo/compte.png" alt="mon compte"
+                        title="se connecter"></a>
+                <img class="pani" src="../img/logo/panier.png" alt="mon panier">
+            </div>
+            <div class="hamburger">
+                <nav id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">×</a>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="nosproduits.html">Nos produits</a></li>
+                        <li><a href="magasin.html">Points de vente</a></li>
+                        <li><a href="reservation.html">Réservation</a></li>
+                        <li><a href="avis.html">Avis</a></li>
+                        <li><a href="laboutique.html">La boutique</a></li>
+                        <li><a href="actualite.html">Actualités</a></li>
+                        <li><a href="moncompte.html">Mon compte</a></li>
+                        <li class="flex">
+                                <form class="flexValidPays"  method="get" action="../index.html" enctype="multipart/form-data">
+                                    <label> <input class="pays" name="langue" type="radio" value="French">
+                                        <img style="width: 30px;" class="logo2" src="../img/logo/logofr.jpg"
+                                            alt="logo fr">
+                                    </label>
+                                    <label> <input class="pays" name="langue" type="radio" value="English">
+                                        <img style="width: 18px;" class="logo2" src="../img/logo/logogr.jpg"
+                                            alt="logo grb">
+                                    </label>
+                                    <button class="valider" type="submit">Valider</button><br>
+                                </form>
+                            
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" id="openBtn">
+                    <span class="burger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container-main">
+            <form class="monCompte" action="../index.html">
+                <label for="pseudo">Pseudo</label>
+                <input style="margin-left: 40px;" type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo">
+                <br><br>
+                <label for="mdp">Mot de Passe</label>
+                <input type="password" id="mdp" name="mot de passe" placeholder="8 caractères minmums + caractère spécial">
+                <button style="margin-top:60px;">VALIDEZ</button>
+            </form>
+
+
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <ul class="footerflex">
+                <li><a href="laboutique.html#contact">Contact</a></li>
+                <li><a href="../ML.pdf">Mentions légales</a></li>
+                <li><a href="../conditions-generales-de-vente.pdf">Conditions Génerales de ventes</a></li>
+                <li><a href="../plan_du_site.pdf">Plan du site</a></li>
+                <li><a href="javascript:window.print()">Imprimer cette page</a></li>
+                <li><a href="presse.html">S'inscrire à la newsletter</a></li>
+                <li><a href="https://fr-fr.facebook.com/business/shops">Partage</a></li>
+            </ul>
+
+        </div>
+
+
+    </footer>
+    <div id="scroll_to_top">
+        <a href="#top"><img src="../img/logo/haut.png" alt="Retourner en haut" /></a>
+    </div>
+
+    <script src="../js/e_commerce.js"></script>
+
+</body>
+
+</html>
